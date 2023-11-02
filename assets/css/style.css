@@ -139,10 +139,23 @@ header div p {
   color: black;
 }
 
-.sectionImage {
+.sectionImage, .colImage {
   border-radius: 20px;
   box-shadow: 5px 5px 22px 2px #000000;
   border: 2px solid lightgrey;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.row > * {
+  width: 50%;
+}
+
+.colImage {
+  border: none;
+  box-shadow: 3px 4px 19px px #000000;
 }
 
 .box-1 {

@@ -44,6 +44,17 @@ header{
 .sectionImage{
     @include floating();
 }
+
+.row{
+    @include grid(2);
+}
+
+.colImage{
+    @extend .sectionImage;
+    border: none;
+    box-shadow: 3px 4px 19px px #000000;
+}
+
 .box-1{
     @include dynamicBtn(.5rem, 1.2rem,$btn-c-blue , 5px)
 }

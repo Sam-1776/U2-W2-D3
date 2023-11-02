@@ -3,3 +3,12 @@
     box-shadow: 5px 5px 22px 2px #000000;
     border: 2px solid lightgrey;
 }
+
+
+@mixin grid ($col){
+    display: flex;
+    flex-wrap: wrap;
+    >*{
+        width: (100 / $col) * 1%;
+    }
+}
