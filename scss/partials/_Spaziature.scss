@@ -1,0 +1,30 @@
+$spacings: (
+  xs: 10px,
+  sm: 20px,
+  md: 30px,
+  lg: 50px,
+  xl: 100px
+);
+
+@each $key, $value in $spacings {
+    .pi-#{$key} {
+      padding-inline: $value;
+    }
+  }
+
+  @each $key, $value in $spacings {
+    .pb-#{$key} {
+      padding-block: $value;
+    }
+  }
+@each $key, $value in $spacings {
+    .mi-#{$key} {
+      margin-inline: $value;
+    }
+  }
+
+  @each $key, $value in $spacings {
+    .mb-#{$key} {
+      margin-block: $value;
+    }
+  }

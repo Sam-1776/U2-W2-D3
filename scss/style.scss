@@ -1,0 +1,73 @@
+@import "./partials/Reset";
+@import "./partials/Colori";
+@import "./partials/Font";
+@import "./partials/Spaziature";
+@import "./partials/Bottoni";
+@import "./partials/Mixins";
+@import "./partials/Animazioni";
+
+.title {
+  @include title-big($fc);
+}
+
+body{
+    color: $fc;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    nav{
+        ul{
+            li{
+                display: inline-block;
+                font-size: $fs-p;
+                font-weight: $fw-4;
+
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+    div{
+        p{
+            font-size: $fs-p;
+            font-weight: $fw-p;
+            color: black;
+        }
+    }
+
+    
+}
+
+.sectionImage{
+    @include floating();
+}
+.box-1{
+    @include dynamicBtn(.5rem, 1.2rem,$btn-c-blue , 5px)
+}
+.box-2{
+    @include dynamicBtn(2rem, 1.2rem, $btn-c-orange, 7px)
+}
+.box-3{
+    @include dynamicBtn(1rem, 1.2rem, $btn-c-green, 9px)
+}
+
+section{
+    background-color: $bg-hero;
+    .container{
+        display: flex;
+        div{
+            img{
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+        p{
+            align-self: center;
+            font-size: $fs-p;
+            font-weight: $fw-p;
+        }
+    }
+}
